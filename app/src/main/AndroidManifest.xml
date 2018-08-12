@@ -11,14 +11,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".SplashActivity">
+        <activity android:name=".viewcontrollers.activities.SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".LoginActivity" />
+        <activity android:name=".viewcontrollers.activities.LoginActivity" />
 
         <meta-data
             android:name="preloaded_fonts"
@@ -26,7 +26,7 @@
         <meta-data android:name="com.facebook.sdk.ApplicationId"
             android:value="@string/facebook_app_id"/>
 
-        <activity android:name=".MenuActivity"></activity>
+        <activity android:name=".viewcontrollers.activities.MenuActivity"></activity>
     </application>
 
 </manifest>

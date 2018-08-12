@@ -1,4 +1,4 @@
-package com.example.rocio.firstapp;
+package com.example.rocio.firstapp.viewcontrollers.activities;
 
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
@@ -6,6 +6,8 @@ import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.WindowManager;
+
+import com.example.rocio.firstapp.R;
 
 public class SplashActivity extends AppCompatActivity {
 
@@ -29,5 +31,6 @@ public class SplashActivity extends AppCompatActivity {
                 finish();
             };
         }, SPLASH_DURATION);
+
     }
 }

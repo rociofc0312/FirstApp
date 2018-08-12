@@ -1,4 +1,4 @@
-package com.example.rocio.firstapp;
+package com.example.rocio.firstapp.viewcontrollers.activities;
 
 import android.content.DialogInterface;
 import android.content.SharedPreferences;
@@ -7,9 +7,10 @@ import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.widget.Button;
 
+import com.example.rocio.firstapp.R;
 import com.example.rocio.firstapp.util.PreferenceKeys;
+import com.example.rocio.firstapp.viewcontrollers.fragments.HomeFragment;
 
 public class MenuActivity extends AppCompatActivity {
 
@@ -19,7 +20,7 @@ public class MenuActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu);
-        isFirstLogin();
+        //isFirstLogin();
         init();
     }
 
@@ -35,7 +36,7 @@ public class MenuActivity extends AppCompatActivity {
                 public void onClick(DialogInterface dialogInterface, int i) {
                     SharedPreferences.Editor editor = preferences.edit();
                     editor.putBoolean(PreferenceKeys.FIRST_TIME_LOGIN, false);
-                    editor.commit();
+                    editor.apply();
                     dialogInterface.dismiss();
                 }
             });
