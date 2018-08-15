@@ -11,7 +11,7 @@ import com.example.rocio.firstapp.R;
 
 public class SplashActivity extends AppCompatActivity {
 
-    private final int SPLASH_DURATION = 20000;
+    private final int SPLASH_DURATION = 2000;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

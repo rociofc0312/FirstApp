@@ -3,6 +3,9 @@
     package="com.example.rocio.firstapp">
 
     <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
 
     <application
         android:allowBackup="true"
@@ -25,8 +28,16 @@
             android:resource="@array/preloaded_fonts" />
         <meta-data android:name="com.facebook.sdk.ApplicationId"
             android:value="@string/facebook_app_id"/>
+        <meta-data android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyCb7D4YzPYxDQN-LC4F-CcScmi9mVkOxl4"/>
 
-        <activity android:name=".viewcontrollers.activities.MenuActivity"></activity>
+        <activity android:name=".viewcontrollers.activities.MenuActivity">
+        </activity>
     </application>
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true">
+    </uses-feature>
 
 </manifest>

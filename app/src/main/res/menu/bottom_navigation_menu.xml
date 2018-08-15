@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/bottom_nav_home"
+        android:icon="@drawable/ic_action_black_home"
+        android:layout_centerVertical = "true"
+        android:title="Home">
+    </item>
+    <item
+        android:id="@+id/bottom_nav_history"
+        android:icon="@drawable/ic_action_black_history"
+        android:layout_centerVertical = "true"
+        android:title="History">
+    </item>
+    <item
+        android:id="@+id/bottom_nav_favorite"
+        android:icon="@drawable/ic_action_black_heart"
+        android:layout_centerVertical = "true"
+        android:title="Favorites">
+    </item>
+    <item
+        android:id="@+id/bottom_nav_profile"
+        android:icon="@drawable/ic_action_black_user"
+        android:layout_centerVertical = "true"
+        android:title="Profile">
+    </item>
+
+</menu>

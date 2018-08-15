@@ -14,29 +14,29 @@
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="24dp"
-        android:background="@color/colorAccent"
+        android:background="@color/colorSecondary"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
     <android.support.v7.widget.AppCompatEditText
-        android:id="@+id/editText"
+        android:id="@+id/password"
         android:layout_width="290dp"
         android:layout_height="43dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:ems="10"
-        android:fontFamily="@font/ubuntu"
+        android:fontFamily="@font/raleway"
         android:hint="Contraseña"
         android:inputType="textPassword"
         android:textColor="@color/colorPrimaryDark"
         android:textColorHint="@color/colorBlack"
-        android:textSize="18sp"
+        android:textSize="16sp"
         app:backgroundTint="@color/colorPrimaryDark"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText2" />
+        app:layout_constraintTop_toBottomOf="@+id/user" />
 
     <ImageView
         android:id="@+id/imageView"
@@ -52,7 +52,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.16000003"
-        app:srcCompat="@drawable/handshake" />
+        app:srcCompat="@drawable/we_need_logo_icon" />
 
 
     <Button
@@ -62,27 +62,28 @@
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:background="@color/colorPrimaryDark"
-        android:fontFamily="@font/ubuntu"
+        android:background="@color/colorSecondary"
+        android:fontFamily="@font/raleway"
         android:text="Iniciar Sesión"
+        android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText" />
+        app:layout_constraintTop_toBottomOf="@+id/password" />
 
     <android.support.v7.widget.AppCompatEditText
-        android:id="@+id/editText2"
+        android:id="@+id/user"
         android:layout_width="290dp"
         android:layout_height="43dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="16dp"
         android:ems="10"
-        android:fontFamily="@font/ubuntu"
+        android:fontFamily="@font/raleway"
         android:hint="Usuario"
         android:inputType="textPersonName"
         android:textColor="@color/colorPrimaryDark"
         android:textColorHint="@color/colorBlack"
-        android:textSize="18sp"
+        android:textSize="16sp"
         app:backgroundTint="@color/colorPrimaryDark"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -95,9 +96,10 @@
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="16dp"
-        android:fontFamily="@font/ubuntu"
+        android:fontFamily="@font/raleway"
         android:text="¿Olvidaste tu contraseña?"
         android:textColor="@color/colorBlack"
+        android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView8" />
@@ -109,11 +111,12 @@
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="16dp"
-        android:fontFamily="@font/ubuntu"
+        android:fontFamily="@font/raleway"
         android:text="¿No eres usuario?"
         android:textColor="@color/colorBlack"
+        android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.34"
+        app:layout_constraintHorizontal_bias="0.19"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnLoginFb" />
 
@@ -123,9 +126,10 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        android:fontFamily="@font/ubuntu"
+        android:fontFamily="@font/raleway"
         android:text="Registrarme"
         android:textColor="@color/colorBlack"
+        android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintBaseline_toBaselineOf="@+id/textView8"
         app:layout_constraintEnd_toEndOf="parent"
@@ -140,7 +144,8 @@
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        facebook:com_facebook_login_text="Iniciar"
+        android:textSize="16sp"
+        facebook:com_facebook_login_text="Iniciar sesión con Facebook"
         facebook:layout_constraintEnd_toEndOf="parent"
         facebook:layout_constraintStart_toStartOf="parent"
         facebook:layout_constraintTop_toBottomOf="@+id/btnLogin" />

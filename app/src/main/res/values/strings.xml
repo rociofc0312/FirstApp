@@ -15,7 +15,11 @@
 
     <!-- Fragment Tags -->
     <string name="tag_fragment_home">Home</string>
+    <string name="tag_fragment_need">Need</string>
+    <string name="tag_fragment_services_detail">Services Detail</string>
+    <string name="tag_fragment_map_check">Services Detail</string>
     <string name="tag_fragment_saved_connections">Saved Connections</string>
+    <string name="tag_fragment_google_map">Google Maps</string>
     <string name="tag_fragment_messages">Messages</string>
     <string name="tag_fragment_settings">Settings</string>
     <string name="tag_fragment_gallery">Gallery</string>

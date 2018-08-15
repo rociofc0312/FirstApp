@@ -11,6 +11,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.rocio.firstapp.R;
 import com.facebook.CallbackManager;
@@ -30,6 +31,8 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
     private LoginButton btnLoginFb;
     private CallbackManager callbackManager;
     private TextView txtMessage;
+    private TextView user;
+    private TextView password;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -66,16 +69,23 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
     @Override
     public void onClick(View view) {
         if(view.getId() == R.id.btnLogin){
-            Intent intent = new Intent(LoginActivity.this, MenuActivity.class);
-            startActivity(intent);
-            overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
-            finish();
+            if(user.getText().toString() != "rociofc" && password.getText().toString() != "12345"){
+                Toast.makeText(this, "Usuario o clave incorrecto", Toast.LENGTH_LONG).show();
+            }
+            else{
+                Intent intent = new Intent(LoginActivity.this, MenuActivity.class);
+                startActivity(intent);
+                overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
+                finish();
+            }
         }
     }
 
     private void initializeControls(){
         callbackManager = CallbackManager.Factory.create();
         btnLoginFb = (LoginButton) findViewById(R.id.btnLoginFb);
+        user = (TextView) findViewById(R.id.user);
+        password = (TextView) findViewById(R.id.password);
     }
 
     private void fbLogin(){

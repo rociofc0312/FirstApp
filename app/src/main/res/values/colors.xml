@@ -1,10 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#37966F</color>
-    <color name="colorPrimaryDark">#356859</color>
+    <color name="colorPrimary">#01bfa5</color>
+    <color name="colorPrimaryDark">#008e76</color>
+    <color name="colorPrimaryLight">#5df2d6</color>
+    <color name="colorSecondary">#f04e4c</color>
+    <color name="colorSecondaryDark">#b70b24</color>
+    <color name="colorSecondaryLight">#ff8278</color>
     <color name="colorAccent">#FD5523</color>
     <color name="colorIcons">#FFFBE6</color>
     <color name="colorWhite">#FFFFFF</color>
     <color name="colorFacebook">#3B5998</color>
     <color name="colorBlack">#150101</color>
 </resources>
+
+
